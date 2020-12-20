@@ -1,11 +1,99 @@
+<!--
 <div class="alert alert-success" role="alert">
-  Profile component!
+  Enter Product Details as available
 </div>
 
-<div class="alert alert-warning" role="alert" *appUser>
-  Content for authorized users only (e.g. display email, send message)!
+<div class="alert alert-warning" role="alert" *appUser> -->
+<div >
+    <h3 class="mat-subheading-1 accent-color" color="green">
+        <p>Enter Product Details as available</p>
+    </h3>
+  <div class="row">
+  <div class="col-md-6">
+  <mat-form-field floaTLabel="never" appearance="standard" color="green">
+    <mat-label color="black"><p style="font-color:black">Item-Id:</p></mat-label>
+    <input matInput placeholder="Enter Item-Id">
+    <mat-hint align="end">Item-Id or Product Id</mat-hint>
+  </mat-form-field>
+    <br>
+  </div>
+  <div class="col-md-6">
+  <mat-form-field floaTLabel="never" appearance="standard" color="green">
+    <mat-label color="black"><p style="font-color:black">Product Name:</p></mat-label>
+    <input matInput placeholder="Enter Product Name">
+  </mat-form-field>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+  <div class="col-md-6">
+  <mat-form-field >
+    <mat-label>Origin:</mat-label>
+    <input matInput placeholder="Enter Origin">
+  </mat-form-field>
+      <br> </div>
+  <div class="col-md-6">
+  <mat-form-field >
+    <mat-label>Contact Name:</mat-label>
+    <input matInput placeholder="Enter Name">
+  </mat-form-field>
+  <br>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+  <mat-form-field floaTLabel="never" appearance="standard" color="green">
+    <mat-label color="black"><p>Effective Date:</p></mat-label>
+    <input matInput placeholder="Effective Date">
+  </mat-form-field>
+  <br>
+    </div>
+      <div class="col-md-6">
+         <mat-form-field >
+        <mat-label ><p >Expiry Date:</p></mat-label>
+         <input matInput placeholder="Expiry Date">
+        </mat-form-field>
+      </div>
+  </div>
+  <br>
+    <div class="row">
+        <div class="col-md-6">
+        <mat-form-field >
+            <mat-label>Email:</mat-label>
+            <input matInput placeholder="Enter Email">
+         </mat-form-field>
+        </div>
+
+  <br>
+        <div class="col-md-6">
+            <mat-form-field >
+             <mat-label>Phone:</mat-label>
+             <input matInput placeholder="Enter Phone">
+             </mat-form-field>
+        </div>
+    </div>
+     <br>
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field floaTLabel="never">
+              <textarea matInput placeholder="Enter Address"></textarea>
+             </mat-form-field>
+        </div>
+    <br>
+        <div class="col-md-6">
+            <mat-form-field floaTLabel="never">
+             <textarea matInput placeholder="Enter product details"></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+
+  <br><br>
+  <button class="details-form__submit" mat-flat-button color="accent" (click)="onDetailsFormSubmit()">Save</button>
 </div>
+
+<!--
 
 <div class="alert alert-danger" role="alert" *appUserRole="[ Role.Admin ]">
-  Content for admin users only (e.g. enable/disable user)!
+Content for admin users only (e.g. enable/disable user)!
 </div>
+ -->

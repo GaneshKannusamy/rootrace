@@ -1,7 +1,35 @@
-<div class="alert alert-danger" role="alert">
-  Admin module!
+<!-- <div class="alert alert-danger" role="alert">
+  Admin User Access Page
+</div>
+-->
+
+<div >
+  Select the Product to generate a QR code!
+  <br><br>
+  <button (click)="updateQrInfo('Mangoes')">Item-Id/Product-Id 1</button>
+  <br><br>
+  <button (click)="updateQrInfo('Apples')">Item-Id/Product-Id 2</button>
+  <br><br>
+  <button (click)="updateQrInfo('Rib')">Item-Id/Product-Id 3</button>
+  <br><br> <br><br>
+  <qr-code [value]="qrCodeVal" [size]="width" [level]="level"></qr-code>
 </div>
 
-<div class="alert alert-success" role="alert">
-  Dashboard component!
-</div>
+<br />
+<br />
+
+<br />
+<br />
+<strong color="green">QR Code Width Adjust</strong>:
+<button (click)="updateWidth(450)">450</button>
+<button (click)="updateWidth(400)">400</button>
+<button (click)="updateWidth(300)">300</button>
+<button (click)="updateWidth(200)">200</button>
+
+<br />
+<br />
+<strong color="green">QR Code Level Adjust</strong>:
+<button (click)="updateLevel('L')">L</button>
+<button (click)="updateLevel('M')">M</button>
+<button (click)="updateLevel('Q')">Q</button>
+<button (click)="updateLevel('H')">H</button>

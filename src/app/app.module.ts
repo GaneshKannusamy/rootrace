@@ -10,6 +10,12 @@ import { LoginComponent } from './login/login.component';
 import { UserRoleDirective } from './directives/user-role.directive';
 import { UserDirective } from './directives/user.directive';
 import { AuthService } from './services/auth.service';
+import { QRCodeModule } from 'angular2-qrcode';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,14 @@ import { AuthService } from './services/auth.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QRCodeModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule
   ],
   exports: [
     UserDirective,

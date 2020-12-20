@@ -6,7 +6,7 @@
 
       <!-- Authorized only -->
       <li class="nav-item" *ngIf="isAuthorized">
-        <a class="nav-link" [routerLink]="['profile']">Profile</a>
+        <a class="nav-link" [routerLink]="['profile']">Product</a>
       </li>
 
       <!-- Admin only -->
@@ -31,18 +31,15 @@
     </span>
 </header>
 
-<div class="jumbotron">
-  <div class="container-fluid">
-    <router-outlet></router-outlet>
+<body height="100%" width="100%">
+  <div class="container hero">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-</div>
-
-<div class="text-center">
-  <p>
-    <a href="https://twitter.com/maximzhukov_dev" target="_blank">@maximzhukov_dev</a>, 2020
-  </p>
-
-  <p>
-    <a href="https://fsou1.github.io/Angular_8_role_based_authorization/" target="_top">Angular 8 - Role-based authorization with sample</a>
+</body>
+<div class="text-center footer-copyright text-center py-3">
+  <p> © 2021 Copyright,
+    <a href="https://twitter.com/adyorker" target="_blank">@AdYorker</a>
   </p>
 </div>

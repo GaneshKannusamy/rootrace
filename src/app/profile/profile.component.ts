@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Role } from '../models/role';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 @Component({
   selector: 'app-profile',
@@ -12,6 +14,10 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onDetailsFormSubmit(){
+    alert('Saved Successfully');
   }
 
 }
