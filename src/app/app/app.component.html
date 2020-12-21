@@ -3,10 +3,19 @@
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/']">Home</a>
       </li>
-
+  <!--    <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/']">Products</a>
+        <mat-menu #appMenu="matMenu">
+          <ng-template matMenuContent>
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>Help</button>
+          </ng-template>
+        </mat-menu>
+      </li>
+-->
       <!-- Authorized only -->
       <li class="nav-item" *ngIf="isAuthorized">
-        <a class="nav-link" [routerLink]="['profile']">Product</a>
+        <a class="nav-link" [routerLink]="['profile']">Item</a>
       </li>
 
       <!-- Admin only -->
