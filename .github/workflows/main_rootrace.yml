@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'rootrace'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_123acbe84fa14bdea61d42e1a7563bab }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9b474f838ba94ae98c8858f1fac14d51 }}
         package: .
