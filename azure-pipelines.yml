@@ -24,6 +24,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    appType: 'webApp'
-    WebAppName: rootrace
+    azureSubscription: 'Ganesh-Subscription (29ce10b5-5d2a-4c22-b99c-cd8b4dc3ec96)'
+    appType: 'webAppLinux'
+    WebAppName: 'rootrace'
     packageForLinux: 'dist/'
