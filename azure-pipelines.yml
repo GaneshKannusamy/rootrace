@@ -20,3 +20,11 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+  
+  - task: AzureRmWebAppDeployment@4
+    inputs:
+      ConnectionType: 'AzureRM'
+      azureSubscription: 'Ganesh-Subscription (29ce10b5-5d2a-4c22-b99c-cd8b4dc3ec96)'
+      appType: 'webAppLinux'
+      WebAppName: 'rootrace'
+      packageForLinux: 'dist/'
