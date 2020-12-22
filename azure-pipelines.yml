@@ -25,5 +25,5 @@ steps:
   inputs:
     ConnectionType: 'AzureRM'
     appType: 'webApp'
-    WebAppName: 
+    WebAppName: rootrace
     packageForLinux: 'dist/'
